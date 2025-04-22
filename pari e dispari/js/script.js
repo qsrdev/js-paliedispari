@@ -3,25 +3,6 @@ let userEven;
 let userOdd;
 let rollCPU;
 
-const languages = {
-  it: {
-    odd: "pari",
-    even: "dispari",
-  },
-  es: {
-    odd: "paris",
-    even: "disparis",
-  },
-  en: {
-    odd: "odd",
-    even: "even",
-  },
-  fr: {
-    odd: "pariè",
-    even: "dispariè",
-  },
-};
-
 function oddoreven(userType) {
   return userType == 0 ? "odd" : "even";
 }
@@ -33,9 +14,9 @@ let number = 7;
 let isWinner = checkWin(user, number);
 
 if (isWinner) {
-  console.log("hai scelto " + languages.fr[user] + ", è uscito " + number + " per cui hai vinto");
+  console.log("hai scelto " + user + ", è uscito " + number + " per cui hai vinto");
 } else {
-  console.log("hai scelto " + languages.fr[user] + ", è uscito " + number + " per cui hai perso");
+  console.log("hai scelto " + user + ", è uscito " + number + " per cui hai perso");
 }
 
 function checkWin(user, value) {
