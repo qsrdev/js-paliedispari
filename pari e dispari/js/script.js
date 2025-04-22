@@ -1,6 +1,7 @@
 let user;
 let userEven;
 let userOdd;
+let rollCPU;
 
 function oddoreven() {
   console.log(`Accesso alla funzione di Richiesta se il giocatore vuole essere pari o dispari`);
@@ -47,7 +48,7 @@ roll();
 
 function vincitore() {
   console.log(`Calcolo del vincitore`);
-  let risultato = userNumber() + roll();
+  let risultato = user + rollCPU;
   if (risultato % 2 === 0 && user == userEven) {
     alert(`Vince il giocatore`);
   } else if (risultato % 2 != 0 && user == userOdd) {
